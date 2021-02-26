@@ -1,0 +1,123 @@
+.investorform {
+    background-image: url("../../img/We&About.jpg");
+    min-height: 150vh;
+
+    &-arrow {
+        height: 8px;
+        @media (max-width:767px) {
+            height: 7px;
+        }
+    }
+
+    &-title {
+        @media (max-width:767px) {
+            display: none;
+        }
+    }
+
+    &-logo{
+        @media (max-width:767px) {
+            width: 80%;
+        }
+}
+}
+
+.forminvestor {
+
+    &-top {
+        &::before {
+            content: '';
+            position: absolute;
+            width: 30px;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            background: #EBC26E;
+        }
+
+        height: 120px;
+        position: relative;
+        width: 100%;
+        background: #57637B;
+    }
+
+    &-content {
+        background: #F5F5F5;
+
+
+        &-label {
+            margin-top: 40px;
+
+            &::before {
+                content: '';
+                border: 3px solid #EBC26E;
+                height: 35px;
+                left: 0;
+                margin-right: 10px;
+
+            }
+        }
+
+        &-labelcustom {
+            margin-top: -170px;
+
+            @media (max-width:767px) {
+                margin-top: 0px;
+
+            }
+
+            &::before {
+                content: '';
+                border: 3px solid #EBC26E;
+                height: 35px;
+                left: 0;
+                margin-right: 10px;
+
+            }
+        }
+
+        &-input {
+            border: none;
+            border-bottom: 0.5px solid #4B4B4B;
+            background: #F5F5F5;
+
+        }
+
+        &-textarea {
+            color: black !important;
+            min-height: 50px;
+            height: 130px;
+            border: 0.5px solid #4B4B4B;
+            background: #F5F5F5;
+
+
+            &:focus {
+                outline: none !important;
+            }
+        }
+
+        &-btn {
+            width: 170px;
+            height: 39px;
+            background: #57637B;
+            border: none !important;
+        }
+    }
+
+    &-bottom {
+        &::before {
+            content: '';
+            position: absolute;
+            width: 30px;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            background: #EBC26E;
+        }
+
+        height: 20px;
+        position: relative;
+        width: 100%;
+        background: #57637B;
+    }
+}

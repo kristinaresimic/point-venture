@@ -1,0 +1,166 @@
+@import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+@font-face {
+  font-family: 'Constantia';
+  src: local('Constantia'), url('../fonts/Constantia.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.5;
+}
+
+$black: #000000;
+$white: #ffffff;
+$gold: #EBC26E;
+$blue: #57637B;
+$grey: #4B4B4B;
+
+
+
+* {
+  font-family: "Constantia";
+  font-style: normal;
+  font-size: 16px !important;
+  font-weight: 400;
+  color: $white;
+}
+
+
+
+html {
+  overflow-x: hidden;
+}
+
+/* ----------------------------- TEXT COLOR STYLES ----------------------------- */
+.c-black {
+  color: $black !important;
+}
+
+.c-white {
+  color: $white !important;
+}
+
+.c-gold {
+  color: $gold !important;
+}
+
+.c-blue {
+  color: $blue !important;
+}
+
+.c-grey {
+  color: $grey !important;
+}
+
+/* ----------------------------- FONT WEIGHT STYLES ----------------------------- */
+
+
+
+.fw-400 {
+  font-weight: 400 !important;
+}
+
+.fw-500 {
+  font-weight: 500 !important;
+}
+
+.fw-600 {
+  font-weight: 600 !important;
+}
+
+.fw-700 {
+  font-weight: 700 !important;
+}
+
+
+/* ----------------------------- FONT SIZE STYLES ----------------------------- */
+/* --------- headings --------- */
+
+/* 64px */
+.h1 {
+  font-size: 4rem !important;
+  line-height: 4.875rem !important;
+}
+/* 48px */
+.h2 {
+    font-size: 3rem !important;
+    line-height: 3.688rem !important;
+  }
+
+/* 36px */
+.h3 {
+  font-size: 2.25rem !important;
+  line-height: 2.75rem !important;
+}
+
+/* 28px */
+.h4{
+  font-size: 	1.75rem!important;
+  line-height: 2.125rem !important;
+}
+
+/* --------- paragraphs --------- */
+
+/* 24px */
+.p1 {
+    font-size: 1.5rem !important;
+    line-height: 1.813rem !important;
+  }
+  
+  
+/* 18px */
+.p2 {
+  font-size: 1.125rem !important;
+  line-height:  1.375rem !important;
+}
+
+
+
+/* 14px */
+.p4 {
+  font-size: 0.875rem !important;
+  line-height: 1rem !important;
+}
+
+
+
+/* ----------------------------- DIV STYLES ----------------------------- */
+
+@media only screen and (min-device-width: 1366px) and (max-device-width: 1919px) {
+  * {
+  font-size: 14px !important;
+  }
+  }
+  
+  
+  @media only screen and (min-width: 992px) and (max-width: 1365px) {
+  * {
+  font-size: 12px !important;
+  }
+  }
+  
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+  * {
+  font-size: 10.5px !important;
+  }
+  }
+  
+  
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+  * {
+  font-size: 10.5px !important;
+  }
+  }
+  
+  
+  @media only screen and (min-width: 0px) and (max-width: 575px) {
+  * {
+  font-size: 12.5px !important;
+  }
+  }
+
+  button{
+    &:focus{
+      outline: none!important;
+    }
+  }

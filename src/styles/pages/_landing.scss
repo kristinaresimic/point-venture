@@ -1,0 +1,18 @@
+.landing {
+    background-image: url("../../img/LandingPage.jpg");
+    height: 100vh;
+
+    & h1 {
+        @media (max-width:767px) {
+            font-size: 3rem !important;
+            line-height: 3.688rem !important;
+        }
+    }
+
+    & p {
+        @media (max-width:767px) {
+            font-size: 1.125rem !important;
+            line-height: 1.375rem !important;
+        }
+    }
+}

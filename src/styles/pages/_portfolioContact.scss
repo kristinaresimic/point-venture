@@ -1,0 +1,71 @@
+.portfolio {
+    background-image: url('../../img/PortfolioContact.jpg');
+    min-height: 200vh;
+
+    &-container {
+        & img {
+            filter: brightness(10%);
+            transition-duration: .4s;
+        }
+
+        & hr {
+            color: $gold !important;
+            background-color: $gold !important;
+            border-top: 1px solid red !important;
+        }
+
+        &-btn1 {
+            background: rgba(235, 194, 110, 0.5);
+            height: 40px;
+        }
+
+        &-btn2 {
+            border: solid 1px $gold;
+            height: 40px;
+        }
+
+        &-line {
+            width: 170px;
+            height: 2px;
+            background-color: #CFA450;
+
+        }
+    }
+
+    &-item {
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:hover img {
+            filter: brightness(100%);
+        }
+
+        & h1 {
+            @media (max-width:991px) {
+                font-size: 2.25rem !important;
+                line-height: 2.75rem !important;
+
+            }
+        }
+    }
+}
+
+.contact {
+    margin: 10rem 0rem;
+    &-input {
+        background: rgba(114, 114, 114, 0.75);
+        color: white!important;
+        min-height: 40px;
+        &:focus {
+            outline: none !important;
+        }
+    }
+
+    &-btn {
+        width: 251px;
+        height: 40px;
+        background: rgba(235, 194, 110, 0.5);
+        border: none!important;
+    }
+}

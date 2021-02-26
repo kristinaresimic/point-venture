@@ -1,0 +1,26 @@
+.whatWeOffer{
+    background: #1D1C1B;
+    min-height: 100vh;
+    &-item {
+        &-top {
+          min-height: 220px;
+    
+          @media (max-width:991px) {
+            min-height: 120px;
+    
+          }
+    
+          &-icon {
+            min-height: 130px;
+            & img{
+              width: 35%;
+              @media (max-width: 1200px) {
+                width: 40%;    
+              }
+            }
+          }
+    
+    
+        }
+      }
+}

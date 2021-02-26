@@ -1,0 +1,59 @@
+@import './_variables.scss';
+@import './pages/_landing.scss';
+@import './pages/_weAbout.scss';
+@import './pages/whatWeOffer.scss';
+@import './pages/portfolioContact.scss';
+@import './pages/verticalLine';
+@import './pages/_investorForm.scss';
+@import './pages/contactForm.scss';
+@import './pages/radio.scss';
+
+a{
+  text-decoration: none !important;
+  color: inherit;
+  &:hover{
+    text-decoration: none;
+    color: inherit;
+  }
+}
+.navbar {
+    background-color: #f8f9fac9;
+    transition-duration: 0.4s;
+    z-index: 9!important;
+    padding: 0px 10%!important;
+  &-logo{
+    width: 80px;
+    @media (max-width:565px){
+      width: 60px;
+    }
+  }
+    &-brand {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    &-burger{
+      width: 20px;
+    }
+  
+}
+.footer{
+  min-height:30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1D1C1B;
+  flex-direction: column;
+  @media (max-width:991px){
+    min-height:20vh;
+  }
+  & img{
+    width: 100px;
+    @media (max-width:991px){
+      width: 70px;
+      }
+      @media (max-width:576px){
+        width: 50px;
+        }
+  }
+}

@@ -1,0 +1,120 @@
+@import './variables.scss';
+
+  .sq-radio {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 1px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    min-height: 25px;
+
+    .sq-radio {
+      display: block;
+      position: relative;
+      padding-left: 35px;
+      margin-bottom: 12px;
+      cursor: pointer;
+      font-size: 22px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      min-height: 30px;
+    }
+    
+    /* Hide the browser's default radio button */
+    .sq-radio input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+    }
+    
+    /* Create a custom radio button */
+    .checkmark {
+      position: absolute;
+      top: -2px;
+      left: 0;
+      width: 10px;
+      height: 10px;
+      background-color: #fff;
+      border: 1px solid  #EBC26E;
+      display: flex;
+    }
+    
+    /* On mouse-over, add a grey background color */
+    /* When the radio button is checked, add a blue background 
+    .sq-radio input:checked ~ .checkmark {
+      background-color: #241d25;
+    }
+    */
+    /* Create the indicator (the dot/circle - hidden when not checked) */
+    .checkmark:after {
+      content: "";
+      display: none;
+      position: absolute;
+    }
+    
+    /* Show the indicator (dot/circle) when checked */
+    .sq-radio input:checked ~ .checkmark:after {
+      display: block;
+    }
+  
+    /* Style the indicator (dot/circle) */
+    .sq-radio .checkmark:after {
+      top:2px;
+      left: 2px;
+      width: 8px;
+      height: 8px;
+      background-color: black;
+    }
+  ;
+  }
+  
+  /* Hide the browser's default radio button */
+  .sq-radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border: 1px solid  #EBC26E;
+    display: flex;
+    margin-top: 10px;
+  }
+  /* On mouse-over, add a grey background color */
+  /* When the radio button is checked, add a blue background 
+  .sq-radio input:checked ~ .checkmark {
+    background-color: #241d25;
+  }
+  */
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    display: none;
+    position: absolute;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .sq-radio input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  /* Style the indicator (dot/circle) */
+  .sq-radio .checkmark:after {
+ 
+    width: 9px;
+    height: 9px;
+    background-color: #EBC26E;
+  }
